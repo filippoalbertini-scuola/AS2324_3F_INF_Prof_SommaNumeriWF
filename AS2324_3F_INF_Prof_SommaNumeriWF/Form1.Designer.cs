@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtNumero = new TextBox();
+            label1 = new Label();
+            btnAggiungi = new Button();
+            lblRisultato = new Label();
+            SuspendLayout();
+            // 
+            // txtNumero
+            // 
+            txtNumero.Location = new Point(202, 72);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(125, 27);
+            txtNumero.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(124, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Numero";
+            // 
+            // btnAggiungi
+            // 
+            btnAggiungi.Location = new Point(358, 74);
+            btnAggiungi.Name = "btnAggiungi";
+            btnAggiungi.Size = new Size(94, 29);
+            btnAggiungi.TabIndex = 2;
+            btnAggiungi.Text = "Add";
+            btnAggiungi.UseVisualStyleBackColor = true;
+            // 
+            // lblRisultato
+            // 
+            lblRisultato.AutoSize = true;
+            lblRisultato.Location = new Point(264, 196);
+            lblRisultato.Name = "lblRisultato";
+            lblRisultato.Size = new Size(151, 20);
+            lblRisultato.TabIndex = 1;
+            lblRisultato.Text = "Somma dei numeri ....";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnAggiungi);
+            Controls.Add(lblRisultato);
+            Controls.Add(label1);
+            Controls.Add(txtNumero);
+            Name = "Form1";
+            Text = "Prof;14/03/24;3F; Raccolta di numeri dall'utente";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtNumero;
+        private Label label1;
+        private Button btnAggiungi;
+        private Label lblRisultato;
     }
 }
