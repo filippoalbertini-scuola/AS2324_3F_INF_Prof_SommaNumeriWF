@@ -32,6 +32,8 @@
             label1 = new Label();
             btnAggiungi = new Button();
             lblRisultato = new Label();
+            lblNNumeri = new Label();
+            btnMedia = new Button();
             SuspendLayout();
             // 
             // txtNumero
@@ -58,6 +60,7 @@
             btnAggiungi.TabIndex = 2;
             btnAggiungi.Text = "Add";
             btnAggiungi.UseVisualStyleBackColor = true;
+            btnAggiungi.Click += btnAggiungi_Click;
             // 
             // lblRisultato
             // 
@@ -68,12 +71,33 @@
             lblRisultato.TabIndex = 1;
             lblRisultato.Text = "Somma dei numeri ....";
             // 
+            // lblNNumeri
+            // 
+            lblNNumeri.AutoSize = true;
+            lblNNumeri.Location = new Point(264, 229);
+            lblNNumeri.Name = "lblNNumeri";
+            lblNNumeri.Size = new Size(146, 20);
+            lblNNumeri.TabIndex = 1;
+            lblNNumeri.Text = "Numero di numeri ....";
+            // 
+            // btnMedia
+            // 
+            btnMedia.Location = new Point(294, 297);
+            btnMedia.Name = "btnMedia";
+            btnMedia.Size = new Size(94, 29);
+            btnMedia.TabIndex = 3;
+            btnMedia.Text = "Media";
+            btnMedia.UseVisualStyleBackColor = true;
+            btnMedia.Click += btnMedia_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnMedia);
             Controls.Add(btnAggiungi);
+            Controls.Add(lblNNumeri);
             Controls.Add(lblRisultato);
             Controls.Add(label1);
             Controls.Add(txtNumero);
@@ -89,5 +113,7 @@
         private Label label1;
         private Button btnAggiungi;
         private Label lblRisultato;
+        private Label lblNNumeri;
+        private Button btnMedia;
     }
 }
